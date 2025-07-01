@@ -34,20 +34,25 @@ Welcome to **Chattrix**, a sleek and modern iOS chat application made with Swift
 ## 📂 Project Structure
 
 Chattrix/
-├── ChattrixApp.swift # Entry point
-├── ContentView.swift # Initial launcher view
-├── Model/
-│ ├── CreateUser.swift # Handle user creation in Firestore
-│ └── CheckUser.swift # Auth + user data loading
-├── View/
-│ ├── AccountCreation.swift # Username/about setup
-│ ├── Home.swift # Main chat interface
-│ ├── OtpPage.swift # OTP screen (if needed)
-│ ├── Verify.swift # Verification UI
-│ └── ImagePicker.swift # Image picker for profile
-├── Assets/
-├── GoogleService-Info.plist # Firebase config (⚠️ ignored via .gitignore)
+├── ChattrixApp.swift # App entry point
+├── ContentView.swift # Initial routing view
+├── GoogleService-Info.plist # Firebase config (ignored from Git)
 ├── Info.plist
+│
+├── Model/
+│ ├── CreateUser.swift # Firestore user creation logic
+│ └── CheckUser.swift # Firestore user check logic
+│
+├── View/
+│ ├── AccountCreation.swift # New user profile setup
+│ ├── Home.swift # Main chat UI
+│ ├── Verify.swift # Auth verification screen
+│ ├── OtpPage.swift # Optional OTP screen
+│ ├── ImagePicker.swift # For uploading profile pictures
+│ ├── Indicator.swift # Reusable loading indicator
+│
+├── Assets/ # App assets (images, colors)
+└── .gitignore # Hides private files like plist
 
 
 
