@@ -32,7 +32,7 @@ Welcome to **Chattrix**, a sleek and modern iOS chat application made with Swift
 ---
 
 ## 📂 Project Structure
-
+```
 Chattrix/
 ├── ChattrixApp.swift # App entry point
 ├── ContentView.swift # Initial routing view
@@ -53,7 +53,7 @@ Chattrix/
 │
 ├── Assets/ # App assets (images, colors)
 └── .gitignore # Hides private files like plist
-
+```
 
 
 ---
