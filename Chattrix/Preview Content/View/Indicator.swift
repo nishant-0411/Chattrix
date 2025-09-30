@@ -7,12 +7,15 @@
 
 import SwiftUI
 
-struct Indicator: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct Indicator: UIViewRepresentable {
+    
+    func makeUIView(context: Context) -> UIActivityIndicatorView {
+        let indicator = UIActivityIndicatorView(style: .large)
+        indicator.startAnimating()
+        return indicator
     }
-}
-
-#Preview {
-    Indicator()
+    func updateUIView(_ uiView: UIActivityIndicatorView, context: UIViewRepresentableContext<Indicator>) {
+        
+    }
+    
 }
